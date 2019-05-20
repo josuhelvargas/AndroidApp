@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
 
     private SwipeRefreshLayout mSwipeRefreshLayout;
-    private static String OPEN_WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather?id=3530597&&units=metric&appid=REMPLAZAR_POR_API_KEY";
+    private static String OPEN_WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather?id=3530597&&units=metric&appid=aab43df52f8564004b98f9045f76ee5e";
 
 
 
@@ -26,9 +26,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //Actividad 9 Consulta de un servicio web
-        //En esta actividad crearan una aplicacion que muestre el clima
-        //Se consultara el API de OpenWeather.
+
 
         setContentView(R.layout.activity_main);
 
@@ -47,30 +45,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
             e.printStackTrace();
         }
 
-
-        //Actividades
-        //a) Crea una cuenta en OpenWeather y obten tu appid (API KEY)
-        //Reemplaza tu API KEY en la URL OPEN_WEATHER_URL en este mismo archivo
-        //b) Android permite mostrar imagenes en formato de vectores. En el foro hay una carpeta con los iconos correspondientes a cada estado del clima
-        //proporcionado por OpenWeather. En la carpeta res->drawable se ha incluido una imagen de tipo vector (ic_w01d.xml)
-        //Para convertir los archivos svg al formato de android, deberan archivo por archivo, dar click derecho en res->drawable->new->Vector asset.
-        //En el cuadro de dialogo seleccionan asset type = local y luego eligen el archivo deseado.
-        //El nombre del archivo debera ser "ic" + nombre del svg como se muestra en ic_w01d
-        //Para ver el porque de estos nombre pueden consultar https://openweathermap.org/weather-conditions
-
-        //c) Ejecuta la aplicacion
-        //d) Que permiso se le tuvo que otorgar a la aplicacion en el archivo AndroidManifest.xml?
-        //e) Para que sirve el control SwipeRefreshLayout, cuantos hijos puede tener?
-        //f) Cuando se ejecuta el metodo onRefresh?
-        //g) En que formato devuelve los datos OpenWeather?
-        //h) Explica que ocurre en el metodo onNetworkSuccess
-        //i) Anota tus respuestas y las capturas de pantalla en un documento en Word
-        //j) Sube tu codigo al repositorio.
-        //k) Sube el documento Word a la plataforma Moodle. Incluye la liga a tu repositorio
-
-
     }
-
 
     private void setDrawable(ImageView iv, String drawableName) {
 
